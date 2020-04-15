@@ -1,5 +1,5 @@
 {
   "dependencies": {
-    "dagre": "^0.7.3"
+    "dagre": "^0.8.1"
   }
 }
