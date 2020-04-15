@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "babel-core": "6.3.21",
+    "babel-core": "6.10.4",
     "babel-eslint": "6.0.4",
     "babel-jest": "6.0.1",
     "babel-loader": "6.2.0",
@@ -9,13 +9,13 @@
     "babel-preset-stage-0": "6.3.13",
     "classnames": "2.2.1",
     "es6-symbol": "3.0.2",
-    "eslint": "2.10.2",
+    "eslint": "4.18.2",
     "eslint-plugin-react": "5.1.1",
     "fbjs": "0.5.1",
     "fbjs-scripts": "0.7.0",
-    "flow-bin": "0.23.0",
+    "flow-bin": "0.32.0",
     "immutable": "3.7.6",
-    "jest-cli": "0.9.0-fb2",
+    "jest-cli": "19.0.0",
     "json-loader": "0.5.4",
     "node-libs-browser": "0.5.3",
     "object-assign": "4.0.1",
@@ -23,14 +23,17 @@
     "react": "15.3.0",
     "react-addons-create-fragment": "15.3.0",
     "react-dom": "15.3.0",
-    "webpack": "1.12.9"
+    "webpack": "2.2.0",
+    "snyk": "^1.305.1"
   },
   "license": "BSD-3-Clause",
   "repository": "facebook/react-devtools",
   "scripts": {
     "lint": "./node_modules/.bin/eslint .",
     "test": "node --harmony ./node_modules/.bin/jest",
-    "typecheck": "flow check"
+    "typecheck": "flow check",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "jest": {
     "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
@@ -44,5 +47,6 @@
       "json",
       "es6"
     ]
-  }
+  },
+  "snyk": true
 }
