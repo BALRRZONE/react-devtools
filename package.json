@@ -23,14 +23,17 @@
     "react": "15.3.0",
     "react-addons-create-fragment": "15.3.0",
     "react-dom": "15.3.0",
-    "webpack": "1.12.9"
+    "webpack": "1.12.9",
+    "snyk": "^1.316.1"
   },
   "license": "BSD-3-Clause",
   "repository": "facebook/react-devtools",
   "scripts": {
     "lint": "./node_modules/.bin/eslint .",
     "test": "node --harmony ./node_modules/.bin/jest",
-    "typecheck": "flow check"
+    "typecheck": "flow check",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "jest": {
     "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
@@ -44,5 +47,6 @@
       "json",
       "es6"
     ]
-  }
+  },
+  "snyk": true
 }
