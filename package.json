@@ -9,7 +9,7 @@
     "babel-preset-stage-0": "6.3.13",
     "classnames": "2.2.1",
     "es6-symbol": "3.0.2",
-    "eslint": "2.10.2",
+    "eslint": "4.0.0",
     "eslint-plugin-react": "5.1.1",
     "fbjs": "0.5.1",
     "fbjs-scripts": "0.7.0",
